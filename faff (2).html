@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<head>
+  <style>
+  html{
+  scroll-behavior :smooth;
+}
+  
+    body {
+  background: linear-gradient(270deg,silver,purple,skyblue,gray,#007bff,#111,cyan);
+  background-size: 700% 700%;
+  animation: gradientmovie 8s ease infinite;
+} 
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+}
+
+}
+
+.get{
+  color:red;
+  display:flex;
+  gap:20px;
+  padding:4px;
+  list-style: none;
+}
+a{margin:15px;}
+a:hover{color:red;
+  font-size:20px;
+}
+
+#hom {color:#111;
+  font-size:60px;
+  font-style:italic;
+  font-weight:bold;
+  border-right: 10px;
+  display: flex;
+  text-align: center;
+  justify-content:space-between;
+  text-shadow: 0 4px 10px 15px rgba;
+  rgba(skyblue, green, blue, alpha)
+}
+#wow{color:chocolate;
+  font-size:40px;
+  font-weight:bold;
+  font-style:italic;
+}
+h1{color:blue;
+  text-align: center;
+  font-size:100px;
+}
+#p3{color:brown;
+  font-size:30px;
+}
+.het{text-align:center;
+  width: 200px;
+  padding: 20px;
+  background: deepskyblue;
+  color:black;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 0 10px ;
+  margin: 10px; 
+  
+}
+  
+
+  </style>
+</head>
+<header>
+  <nav class="get">
+    <a href="faff.html">Home</a>
+    <a href="Nan.html">About</a>
+    <a href="emo.html">Skills</a>
+    <a href="hhi.html">Service</a>
+        <a href="tet.html">Contact</a>
+  </nav>
+</header>
+<body>
+<section id="home">
+  <h1>Home</h1>
+    <p1 id="hom">Welcome to my portfolio</p1>
+    <p id="p3">HELLO I AM EMEBET WORKU </p>
+  <p id="wow"</p>
+    <div class="het">
+    <a href="hhi.html" class="btn">Contact Me</a></div>
+</section>
+</section>
+<script>
+  // Typing Animation (Infinite Loop)
+const text = "I am grade 11 - web design student";
+let i = 0;
+function typing() {
+  const el = document.getElementById("wow");
+
+  if (i < text.length) {
+    el.innerHTML += text.charAt(i);
+    i++;
+    setTimeout(typing, 100);
+  } else {
+    setTimeout(() => {
+      el.innerHTML = "";
+      i = 0;
+      typing();
+    }, 1500);
+    
+    setTimeout(() => {
+      el.innerHTML = "";
+      i = 0;
+      typing();
+    }, 1500);
+  }
+}
+
+typing();
+</script>
+
+</body>
+</html>
+
